@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumbo a ti | Carta biker</title>
+    <meta
+      name="description"
+      content="Una carta digital para mi niña de ojitos lindos y nuestro primer mes juntos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="envelope" type="button" aria-label="Abrir la carta">
+      <span class="envelope-back"></span>
+      <span class="letter-preview">
+        <span>Hola, mi niña de ojitos lindos <b>✦</b></span>
+      </span>
+      <span class="envelope-front"></span>
+      <span class="envelope-flap"></span>
+      <span class="wax-seal" aria-hidden="true">✦</span>
+      <span class="open-hint">Toca para encender</span>
+    </button>
+
+    <main class="card" aria-label="Carta para mi niña de ojitos lindos" aria-hidden="true">
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+
+      <section class="content">
+        <p class="eyebrow">18/10/26 · 0.1</p>
+        <h1>Hola, mi niña<br /><em>de ojitos lindos</em></h1>
+
+        <div class="letter">
+          <p>
+            Vaya que rápido pasó el tiempo y ya cumplimos nuestro primer mes.
+          </p>
+          <p>
+            Cuántas aventuras hemos recorrido, cuántos besos y abrazos,
+            y sobre todo, cuántas sonrisas. Nunca pensé volver a sentirme
+            emocionado, con ganas de realizar las cosas y seguir adelante.
+          </p>
+          <p>
+            Ahora eres mi motor para seguir corriendo como antes. Gracias por
+            estar conmigo cuando te necesitaba, cuando necesitaba unos brazos.
+            Gracias por ser la chica que eres: la que fue enamorándome con su
+            forma de ser y devolviéndome la seguridad y la paz que tanto necesitaba.
+          </p>
+          <p>
+            Este es el inicio de nuestra historia; una que se escribirá sin final,
+            donde siempre habrá hojas en blanco para crear más momentos juntos.
+          </p>
+          <p class="letter-highlight">
+            No sabes lo feliz que me hace estar a tu lado, tomar tu mano y
+            mirarte a los ojos. Te amo mucho, ojitos hermosos. Vamos por una
+            rodada que no tenga final, donde seamos solo tú y yo.
+          </p>
+        </div>
+      </section>
+
+      <div class="music-player" aria-label="Reproductor de nuestra canción">
+        <div class="music-heading">
+          <div class="music-info">
+            <span class="music-label" id="music-title">Porfa No Te Vayas</span>
+            <span class="music-status" id="music-status">Beret, Morat</span>
+          </div>
+          <button type="button" id="music-heart" class="music-heart" aria-label="Añadir a favoritos">♥</button>
+        </div>
+
+        <div class="music-progress-row">
+          <input id="music-progress" class="music-progress" type="range" min="0" max="143" value="0" aria-label="Progreso de la canción" />
+        </div>
+        <div class="music-times">
+          <span id="music-current">0:00</span>
+          <span>2:23</span>
+        </div>
+
+        <div class="music-controls">
+          <button type="button" id="music-shuffle" class="music-small" aria-label="Modo aleatorio">⇆</button>
+          <button type="button" id="music-back" aria-label="Retroceder 10 segundos">◀</button>
+          <button type="button" id="music-toggle" class="music-toggle" aria-label="Reproducir canción">
+            <span id="music-toggle-icon">▶</span>
+          </button>
+          <button type="button" id="music-forward" aria-label="Avanzar 10 segundos">▶|</button>
+          <button type="button" id="music-repeat" class="music-small" aria-label="Repetir canción">↻</button>
+        </div>
+        <audio id="music-audio" preload="metadata">
+          <source src="porfa-no-te-vayas.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="bike-scene" aria-label="Moto en movimiento" aria-hidden="true">
+        <img src="motorcycle.png" alt="" />
+      </div>
+    </main>
+
+    <div class="floating-hearts" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
